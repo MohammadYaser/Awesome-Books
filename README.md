@@ -66,7 +66,7 @@ To get a local copy up and running, follow these steps:
 <br>
 
 
-👤 **Agneta Pupienyte**
+👤 **Mohammad Yaser**
 
 - GitHub: [@githubhandle](https://github.com/MohammadYaser)
 - Twitter: [@twitterhandle](https://twitter.com/Yaser_Safi19)
