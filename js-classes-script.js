@@ -40,19 +40,3 @@ const displayBooks = (container) => {
 };
 
 displayBooks(container);
-
-addBtn.addEventListener('click', (event) => {
-  const titleInput = document.querySelector('#titleInput');
-  const authorInput = document.querySelector('#authorInput');
-  const title = titleInput.value;
-  const author = authorInput.value;
-  if (title === '' || author === '') {
-    return null;
-  }
-  Book.addBook(title, author);
-  displayBooks(container);
-
-  titleInput.value = '';
-  authorInput.value = '';
-  return event.preventDefault();
-});
