@@ -19,7 +19,7 @@ function displayBooks() {
   const bookList = document.getElementById('bookList');
   bookList.innerHTML = '';
 
-  for (let i = 0; i < books.length; i++) {
+  for (let i = 0; i < books.length; i += 1) {
     const book = books[i];
 
     const listItem = document.createElement('li');
