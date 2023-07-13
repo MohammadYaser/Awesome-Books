@@ -27,6 +27,8 @@ const displayBooks = (container) => {
     const newBook = document.createElement('li');
     newBook.classList.add('newBook');
     newBook.textContent = `${book.title} by ${book.author}`;
+    newBook.classList.add('bg-gray');
+
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
     removeButton.classList.add('remove-btn');
