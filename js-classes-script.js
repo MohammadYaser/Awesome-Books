@@ -58,3 +58,13 @@ addBtn.addEventListener('click', (event) => {
   authorInput.value = '';
   return event.preventDefault();
 });
+
+const addSection = document.getElementById('addNew');
+const listSection = document.getElementById('booklist');
+const contactSection = document.getElementById('contact');
+const add = document.getElementById('add');
+add.addEventListener('click', () => {
+  contactSection.style.display = 'none';
+  listSection.style.display = 'none';
+  addSection.style.display = 'block';
+});
