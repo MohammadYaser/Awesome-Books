@@ -68,3 +68,10 @@ add.addEventListener('click', () => {
   listSection.style.display = 'none';
   addSection.style.display = 'block';
 });
+
+const list = document.getElementById('list');
+list.addEventListener('click', () => {
+  contactSection.style.display = 'none';
+  addSection.style.display = 'none';
+  listSection.style.display = 'block';
+});
