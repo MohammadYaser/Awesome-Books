@@ -82,3 +82,13 @@ contact.addEventListener('click', () => {
   listSection.style.display = 'none';
   contactSection.style.display = 'block';
 });
+
+const dynamicParagraph = document.getElementById('dynamicParagraph');
+
+function updateDateTime() {
+  const currentDate = new Date();
+  const dateTimeString = currentDate.toLocaleString();
+  dynamicParagraph.textContent = dateTimeString;
+}
+updateDateTime();
+setInterval(updateDateTime, 1000);
