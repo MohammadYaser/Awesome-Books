@@ -58,3 +58,37 @@ addBtn.addEventListener('click', (event) => {
   authorInput.value = '';
   return event.preventDefault();
 });
+
+const addSection = document.getElementById('addNew');
+const listSection = document.getElementById('booklist');
+const contactSection = document.getElementById('contact');
+const add = document.getElementById('add');
+add.addEventListener('click', () => {
+  contactSection.style.display = 'none';
+  listSection.style.display = 'none';
+  addSection.style.display = 'block';
+});
+
+const list = document.getElementById('list');
+list.addEventListener('click', () => {
+  contactSection.style.display = 'none';
+  addSection.style.display = 'none';
+  listSection.style.display = 'block';
+});
+
+const contact = document.getElementById('contactBtn');
+contact.addEventListener('click', () => {
+  addSection.style.display = 'none';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'block';
+});
+
+const dynamicParagraph = document.getElementById('dynamicParagraph');
+
+function updateDateTime() {
+  const currentDate = new Date();
+  const dateTimeString = currentDate.toLocaleString();
+  dynamicParagraph.textContent = dateTimeString;
+}
+updateDateTime();
+setInterval(updateDateTime, 1000);
